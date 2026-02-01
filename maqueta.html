@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Práctica 6 Bootstrap - Maqueta</title>
+        <meta name="title" content="Práctica 6 Bootstrap - Maqueta">
+        <meta name="description" content="Parte del ejercicio 6 de DIW en el que hay que realizar una maqueta en la que los contenedores cambien de posicion dependiendo del tamaño de pantalla del dispositivo">
+        <meta name="author" content="Elena">
+        <meta name="keywords" content="maqueta, bootstrap, tamaño pantalla">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="copyright" content="2026, Elena Martínez Martínez">
+        <meta name="robots" content="index,follow">
+        <meta name="language" content="es">
+        <!-- Bootstrap con CDN enlace al archivo CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="maqueta.css">
+    </head>
+    <body>
+        <div class="container-fluid py-4 px-4">
+            <!-- Fila y columna para el header (azul claro) -->
+             <div class="row mb-3">
+                <div class="col"><div class="caja border border-primary bg-primary-subtle"></div></div>
+             </div>
+             <!-- Fila y columnas para el main (cambiantes) -->
+              <div class="row mb-3 justify-content-evenly">
+                <div class="col-1 ms-2 caja d-none d-md-block border border-success bg-success-subtle"></div>
+                <div class="col">
+                    <div class="row mb-3">
+                        <div class="col"><div class="caja border border-warning bg-warning-subtle"></div></div> 
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-6 col-xl-3 mb-2"><div class="caja border border-danger bg-danger-subtle"></div></div>
+                        <div class="col-6 col-xl-3"><div class="caja border border-danger bg-danger-subtle"></div></div>
+                        <div class="col-6 col-xl-3"><div class="caja border border-danger bg-danger-subtle"></div></div>
+                        <div class="col-6 col-xl-3"><div class="caja border border-danger bg-danger-subtle"></div></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-xl-6 h-50 mb-2">
+                        <div class="caja border border-dark bg-dark-subtle"></div>
+                        </div>
+                        <div class="col-12 col-xl-6 h-50">
+                            <div class="caja border border-dark bg-dark-subtle"></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Fila y columnas para el footer (azul oscuro) -->
+              <div class="row">
+                <div class="col"><div class="caja border border-info bg-info-subtle"></div></div>
+              </div>
+        </div>
+    <!-- Bootstrap con CDN enlace los archivos JavaScript y Popper-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
